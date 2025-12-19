@@ -10,7 +10,7 @@ const Auth = () => {
 
       {/* 👇 className REQUIRED by Cypress test */}
       <p className="authText">
-        {isAuth ? "you are authenticated" : "you are not authenticated"}
+        {isAuth ? 'You are now authenticated, you can proceed' : "you are not authenticated"}
       </p>
 
       <label>
