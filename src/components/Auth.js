@@ -8,8 +8,9 @@ const Auth = () => {
     <div>
       <h1>Click on the checkbox to get authenticated</h1>
 
-      <p>
-        {isAuth ? "you are now authenticated" : "you are not authenticated"}
+      {/* 👇 className REQUIRED by Cypress test */}
+      <p className="authText">
+        {isAuth ? "you are authenticated" : "you are not authenticated"}
       </p>
 
       <label>
